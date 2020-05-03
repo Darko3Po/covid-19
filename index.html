@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>COVID DEADTH STATISTIC</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200&family=Merriweather+Sans&display=swap" rel="stylesheet">
+
+    <script src="js/js-quiz-questions.js"></script>
+    <script src="js/js-quiz.js"></script>
+
+	<style type="text/css">
+		*{ margin: 0; padding: 0; font-family: serif; font-size: 1rem;}
+	 	nav{ background-color:#333; color:white;padding: 12px;}
+	 	nav h1{letter-spacing: 0.6rem;}
+	 	nav .test{}
+	 	nav #test{}
+	 	/*Hero banner*/
+	 	.bgimage {
+            width:100%;
+            height:500px;
+            background: url('img/covid19.jpg');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size:cover;
+            background-attachment: fixed;
+          }      
+           .bgimage .col{
+           	padding-top: 10vw;
+           }    
+           .bgimage h1 {
+           font-family: 'Mukta', sans-serif;
+           	font-size: 4rem;
+             color:white;
+             text-shadow:2px 2px #333;
+             text-align: center;
+             padding:0%;
+           }
+           .bgimage .num{
+           	 font-size: 6rem;
+           }
+         	.col #dead{
+           color: linear-gradient(90deg,#d10000,#ff0a0a);
+           }
+           .container{
+            text-align: center;
+            margin: 10px auto;
+            width: 99vw;
+
+           }
+           .container ul{
+           	 position: flex;
+           	 text-align: center;
+             margin: 10px auto;
+             width: 99vw;
+
+           }
+           .container ul li{
+           	 width: 32vw;
+           	 text-align: center;
+           } 
+           .info{
+            display: none;
+           }
+
+           .container ul li a{ color: gray; font-size: 2rem; } /*Tab */
+              .container p{ font-size: 2rem; } .container h3{ font-size: 3rem; color: bold;
+            } /*Form test*/ 
+
+
+            form h4{ 
+                 font-size: 3rem; 
+            padding-top: 4rem;
+             } 
+            button {
+              border-bottom: 2px solid red;
+              background-color: #333;
+              box-shadow: 0 2px 4px 0;
+              padding: 5px 40px;
+              color: white;
+              text-decoration-line: none;
+              margin: 30px auto;
+              letter-spacing: 0.5rem;
+              transition: 0.4s;
+              opacity: 0.8;
+              transform: scale(1);
+            }
+            button:hover{
+              box-shadow: 0 8px 12px 0;
+              cursor: pointer;
+              opacity: 1;
+              transform: scale(1.1);
+            }
+            /* Submit Button */
+              #quiz-wrap input[type=submit] {
+                background: #333;
+                color: white;
+                padding: 10px;
+                border-bottom:2px solid red;
+                padding: 10px 40px;
+                margin: 10px 0;
+                font-size: 20px;
+                transform: scale(1);
+                transition: 0.4s;
+              }
+              #quiz-wrap input[type=submit]:hover{
+                transform: scale(1.1);
+              }
+              #quiz-wrap input[type=input]{
+                background-color: red;
+              }
+              #myInput{
+                z-index: -100;
+              }
+              #footer{
+                background-color: #333;
+                color: white;
+              }
+              .virus{
+                margin: 7rem 5rem 0  5rem;
+              }
+              .person{
+                margin:3rem 5rem 0 5rem;
+              }
+            @media only screen and (max-width: 600px){
+              .information{
+                display: none;
+              }
+              .info{
+                display:contents;4
+                
+              }
+            }
+         </style>
+   </head>
+
+ <body>
+         <!--Naviagioni bar-->
+        <nav> <h1>COVID DEATH STATISTIC</h1>
+            </nav> 
+       <!--Hero banner-->
+        <section class="bgimage"> <div
+            class="container-fluid">
+            <div class="row">
+              <div class="col-lg-12 col-md-12
+                 col-sm-12 col-xs-12" >
+      	
+      		<div class="middle">
+ 		<div class="counting-sec">
+ 			<div class="inner-width">
+ 				<div class="col">
+ 					<h1><div class="num"> 177780</div></h1>
+ 					<h1 id="dead">DEAD</h1>
+ 				</div>
+ 			</div>
+ 		</div>
+ 	</div>
+
+      </div>
+    </div>
+  </div>
+</section>
+	<!--Tab od tri segmenta-->
+	<div class="container">
+  <h2 style="text-align: center;">STATISTIC COVID-19</h2>
+ 
+
+  <ul class="nav nav-tabs">
+    <li class="active"><a data-toggle="tab" href="#home">VIRUS <span class="information">INFORMATION</span><span class="info">INFO</span></a></li>
+    <li><a data-toggle="tab" href="#menu1" style="color: red;">TEST ON COVID-19</a></li>
+    <li><a data-toggle="tab" href="#menu2">RISK TYPES OF PEOPLE</a></li>
+  </ul>
+
+  <div class="tab-content">
+
+    <div id="home" class="tab-pane fade in active">
+      <h3>Coronavirus disease (COVID‑19)</h3>
+      <p>Coronavirus disease (COVID-19) is an infectious disease caused by a new virus.
+The disease causes respiratory illness (like the flu) with symptoms such as a cough, fever, and in more severe cases, difficulty breathing. You can protect yourself by washing your hands frequently, avoiding touching your face, and avoiding close contact (1 meter or 3 feet) with people who are unwell.</p>
+<p>How it spreads
+Coronavirus disease spreads primarily through contact with an infected person when they cough or sneeze. It also spreads when a person touches a surface or object that has the virus on it, then touches their eyes, nose, or mouth.</p>
+    </div>
+
+    <div id="menu1" class="tab-pane fade" style="text-align: center;">
+      <h3 id="simple_test" style="border-bottom: 2px red solid; ">A SIMPLE TEST OF POSSIBLE INFECTION</h3>
+      
+          <form id="quiz-wrap"></form>
+
+
+      <div class="result"></div>
+      
+     
+    </div>
+
+    <div id="menu2" class="tab-pane fade">
+      <h3>Reduce your risk of getting sick with COVID-19</h3>
+      <p>Continue your medications and do not change your treatment plan without talking to your doctor.</p>
+      <p>Have at least a 2-week supply of prescription and non-prescription medications. Talk to your healthcare provider, insurer, and pharmacist about getting an extra supply (i.e., more than two weeks) of prescription medications, if possible, to reduce trips to the pharmacy.</p>
+      <p>Talk to your healthcare provider about whether your vaccinations are up-to-date. People older than 65 years, and those with many underlying conditions, such as those who are immunocompromised or with significant liver disease, are recommended to receive vaccinations against influenza and pneumococcal disease.</p>
+      <p>Do not delay getting emergency care for your underlying condition because of COVID-19. Emergency departments have contingency infection prevention plans to protect you from getting COVID-19 if you need care for your underlying condition.</p>
+      <p>Call your healthcare provider if you have any concerns about your underlying medical conditions or if you get sick and think that you may have COVID-19. If you need emergency help, call 911.</p>
+    </div>
+    
+  </div>
+</div>
+<!--Footer -->
+
+
+  <section id="footer">
+    <div class="container">
+      <div class="row text-center text-xs-center text-sm-left text-md-left">
+        <div class="col-xs-12 col-sm-4 col-md-4">
+          <h3>FORWARD TO FRIENDS</h3>
+         <h5>Help your friends and submit a website link so they can check for the covid-19 virus.</h5>
+         <!-- dugme za kopiranje -->
+              <!-- Trigger -->
+           <center>
+            <p id="p1">facebok.com</p>
+            <button onclick="copyToClipboard('#p1')"><img style="width: 3.5rem; height: 5rem;" src="https://img.icons8.com/carbon-copy/100/000000/copy.png"/><br>Copy</button>
+
+          </center>
+         </div>
+        <div class="col-xs-12 col-sm-4 col-md-4">
+          <h3>PROTECTION PREVENTION</h3>
+        <h5>As a priority in the fight against the virus, we recommend that you wear protective masks and gloves, and keep a distance of 2m.</h5>
+        <!-- Logo rukavice -->
+        <!-- The text field -->
+          <img  class="virus" src="https://img.icons8.com/ios-filled/50/000000/virus.png"/>
+          </div>
+        <div class="col-xs-12 col-sm-4 col-md-4">
+          <h3>CREATOR OF THIS SITE</h3>
+        <h4>TestCorona</h4>
+        <h4>Contact</h4>
+        <h5>Email:  testcorona3@gmail.com  </h5>
+        <img  class="person" src="https://img.icons8.com/pastel-glyph/64/000000/person-male.png"/>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5">
+         <h3>RECOMMENDATION: Keep your distance from other people</h3>
+        </div>
+      </div>  
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
+              Made by TEST CORONA  &copy; 2020   
+        </div>
+      </div>  
+    </div>
+  </section>
+
+
+<script type="text/javascript">
+	$(".num").counterUp({delay: 10,time: 2000});
+
+  function copyToClipboard(element) {
+  var $temp = $("<input>");
+  $("body").append($temp);
+  $temp.val($(element).text()).select();
+  document.execCommand("copy");
+  $temp.remove();
+}
+</script>
+
+
+</body>	
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js">
+  
+</script>
+</html>
